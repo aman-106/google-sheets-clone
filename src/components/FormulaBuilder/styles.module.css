@@ -1,0 +1,85 @@
+.formula_input_container {
+  /* @apply flex justify-items-center content-center;
+     */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  padding: 0.2rem;
+  outline: 1px solid grey;
+}
+
+/* .formula_input_container:hover,.formula_input_container:focus {
+  outline: 1px solid grey;
+} */
+
+
+.tooltip {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10; /* Ensure tooltip stays above other elements */
+  }
+  
+  /* Show tooltip on hover */
+  .formula-input:hover .tooltip {
+    opacity: 1;
+  }
+
+/* .formula_input * {
+  margin: 0;
+  padding: 0;
+} */
+
+.formula_input_text{
+    /* color: grey; */
+    font-weight: 400;
+}
+
+.formula_input-eq {
+  color: #900 !important; /* Dark red for equal sign */
+  font-weight: bold;
+}
+
+.formula_input-name {
+  color: #009 !important; /* Dark blue for formula name */
+  font-weight: bold;
+}
+
+.formula_input-opening-bracket,
+.formula_input-closing-bracket {
+  color: #090 !important;
+  font-weight: bold;
+  /* Dark green for brackets */
+}
+
+.formula_input span {
+  /* Default style for formula values */
+  color: black;
+}
+
+.formula_input_box {
+  width: 10px;
+  color: transparent;
+  outline: 0;
+  background: transparent;
+}
+
+.blinking-border {
+    border-bottom: 1px solid black; /* Set desired border style */
+    animation: blink-border 1s step-end infinite; /* Animation for blinking */
+  }
+  
+  @keyframes blink-border {
+    from, to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,31 @@
+
+.data-grid-skeleton {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.data-grid-row {
+  display: flex;
+  align-items: center;
+  height: 100px; /* Adjust row height as needed */
+  border-bottom: 1px solid #ddd; /* Optional grid line */
+  padding: 4px;
+}
+
+.data-grid-cell {
+  flex: 1;
+  background-color: #eee;
+  border-radius: 4px;
+  margin: 4px;
+  animation: shimmer 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 0;
+  }
+}
