@@ -30,7 +30,3 @@ function* columnNamesGenerator(): Generator<string> {
 const columnGen = columnNamesGenerator();
 
 export {columnGen}
-// console.log(columnGen.next().value); // Output: A
-// console.log(columnGen.next().value); // Output: B
-// console.log(columnGen.next().value); // Output: C
-// // You can continue calling columnGen.next() to get the next column name
