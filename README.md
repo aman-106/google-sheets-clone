@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Spreadsheet Application using Next.js [Next.js](https://nextjs.org/) project
 
 ## Getting Started
 
@@ -6,12 +6,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -72,6 +66,45 @@ The Spreadsheet Application is designed to provide users with a user-friendly in
 3. **State Management:**
    - Changes in the grid state are managed using state management techniques (e.g., React state or Redux).
    - State updates trigger re-renders of relevant UI components to reflect changes in the spreadsheet.
+
+### Main Components Overview
+
+#### 1. **UserInputContext**
+
+- **Purpose:** 
+  - The `UserInputContext` component manages user input related to the spreadsheet application.
+  - It encapsulates state and functions for handling user interactions such as input changes, formula validation, and saving cell values.
+
+- **Key Responsibilities:**
+  - **State Management:** Maintains state variables for user input (`userInput`) and formula status (`isFormula`).
+  - **Event Handling:** Provides functions (`handleInputChange`, `handleSaveValue`, `handleOnBlur`) to manage user input events.
+  - **Context API:** Exposes a context provider to share state and functions with child components.
+
+- **Usage:**
+  - Used within the application to track and process user input within the spreadsheet UI.
+  - Enables seamless integration of user interactions with data manipulation and formula execution.
+
+#### 2. **GridManager**
+
+- **Purpose:**
+  - The `GridManager` module is responsible for managing operations and state related to the spreadsheet grid.
+
+- **Key Responsibilities:**
+  - **Data Management:** Handles operations to add, update, and retrieve data within the spreadsheet grid.
+  - **Cell Management:** Manages individual cell data, including values, formulas, and dependencies.
+  - **Cell Change Handling:** Implements logic for handling cell updates, triggering re-evaluation of dependent cells when values change.
+
+- **Functionality:**
+  - Provides utility functions (`getCellNode`, `handleCellChangeManager`) for grid operations and cell management.
+  - Supports validation, parsing, and execution of formulas within the grid context.
+
+- **Integration:**
+  - Integrated with other components to facilitate data flow and update propagation within the spreadsheet application.
+  - Enables efficient grid manipulation and formula computation based on user interactions and data changes.
+
+---
+
+These main components (`UserInputContext` and `GridManager`) play essential roles in enabling user interaction and managing data within the spreadsheet application. They encapsulate specific functionalities and facilitate the seamless operation of the overall system, ensuring a responsive and intuitive user experience. Integration of these components supports the core operations required for spreadsheet manipulation, including input handling, formula execution, and grid management.  
 
 #### Conclusion
 
