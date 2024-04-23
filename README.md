@@ -9,7 +9,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-A high-level design summary of an application typically outlines the architecture, components, and interactions of the system without delving into detailed implementation specifics. Below is an example of a high-level design summary for a hypothetical application:
 
 ---
 
@@ -49,9 +48,6 @@ The Spreadsheet Application is designed to provide users with a user-friendly in
   - The frontend is implemented using a modern JavaScript framework (e.g., React) for building interactive UI components.
   - Components are structured to handle user inputs, display grid data, and facilitate data flow between UI and backend services.
 
-- **Backend (Server-Side):**
-  - The backend may include services for data persistence, authentication, and computation (e.g., formula evaluation).
-  - Data is stored and managed using a database system (e.g., SQL or NoSQL database) to enable scalability and data integrity.
 
 #### Interaction Flow
 
