@@ -1,5 +1,5 @@
-function* RowsGen(){
-    let index =1;
+function* RowsGen():Generator<number>{
+    let index =0;
     while(true){
         yield index;
         index++;

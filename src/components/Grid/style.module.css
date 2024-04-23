@@ -1,0 +1,40 @@
+.grid_container{
+  overflow: scroll;
+  width: 100%;
+  height: auto; 
+}
+
+.grid_canvas {
+    border: 1px solid #ddd;
+    /* padding: 5rem; */
+    margin: 1rem;
+}
+.cell {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.cellValueInput {
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0 2px;
+    border-radius: 4px;
+}
+
+.cellValueInputContainer{
+    position: absolute;
+    padding: 3px;
+    border: 1px solid #ccc;
+    display: none;
+    background-color: #f0ebeb;
+
+
+}
+
+
+.cell-value-input-container{
+    width: 220px;
+}

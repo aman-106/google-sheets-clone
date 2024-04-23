@@ -18,7 +18,7 @@ function generateColumnName(index: number): string {
 }
 
 function* columnNamesGenerator(): Generator<string> {
-  let index = 1;
+  let index = 0;
 
   while (true) {
     yield generateColumnName(index);
